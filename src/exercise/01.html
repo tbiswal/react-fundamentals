@@ -17,3 +17,21 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+
+<!-- Render DOM Using Javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>React Fundamentals</title>
+</head>
+<body>
+  <div id="root">
+    <script type="module">
+      const element = document.createElement('div');
+      element.textContent = 'Hello World';
+      element.className = 'container';
+      document.getElementById('root').append(element);
+    </script>
+  </div>
+</body>
+</html>
